@@ -1,0 +1,11 @@
+[user]
+	name = Fabien Loudet
+	email = fabien.loudet@gmail.com
+[core]
+	editor = vim
+	excludesfile = /Users/fabien/.gitignore_global
+[color]
+	ui = true
+[pager]
+	diff = true
+	log = false
