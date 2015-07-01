@@ -4,11 +4,11 @@
 set nocompatible
 
 " enable pathogen
-call pathogen#infect()
+"call pathogen#infect()
 
 " enable matchit
-filetype plugin on
-runtime macros/matchit.vim
+"filetype plugin on
+"runtime macros/matchit.vim
 
 " Show (partial) command in the last line of the screen
 set showcmd
@@ -51,7 +51,7 @@ set encoding=utf-8
 set history=300
 
 " Python parameters 
-set textwidth=79  " lines longer than 79 columns will be broken
+"set textwidth=79  " lines longer than 79 columns will be broken
 set shiftwidth=4  " operation >> indents 4 columns; << unindents 4 columns
 set tabstop=4     " a hard TAB displays as 4 columns
 set expandtab     " insert spaces when hitting TABs
