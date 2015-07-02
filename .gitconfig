@@ -8,4 +8,12 @@
 	ui = true
 [pager]
 	diff = true
-	log = false
+	log = true
+    stash = false
+[alias]
+	co = checkout
+	ci = commit
+	br = branch
+	df = diff
+	dfs = diff --staged
+	logg = log --oneline --graph --all --decorate
