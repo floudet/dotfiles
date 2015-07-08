@@ -4,11 +4,11 @@
 set nocompatible
 
 " enable pathogen
-"call pathogen#infect()
+call pathogen#infect()
 
 " enable matchit
-"filetype plugin on
-"runtime macros/matchit.vim
+filetype plugin on
+runtime macros/matchit.vim
 
 " Show (partial) command in the last line of the screen
 set showcmd
