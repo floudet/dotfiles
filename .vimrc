@@ -52,15 +52,18 @@ set history=300
 
 " Python parameters 
 "set textwidth=79  " lines longer than 79 columns will be broken
-set shiftwidth=4  " operation >> indents 4 columns; << unindents 4 columns
-set tabstop=4     " a hard TAB displays as 4 columns
-set expandtab     " insert spaces when hitting TABs
-set softtabstop=4 " insert/delete 4 spaces when hitting a TAB/BACKSPACE
-set shiftround    " round indent to multiple of 'shiftwidth'
+"set shiftwidth=4  " operation >> indents 4 columns; << unindents 4 columns
+"set tabstop=4     " a hard TAB displays as 4 columns
+"set expandtab     " insert spaces when hitting TABs
+"set softtabstop=4 " insert/delete 4 spaces when hitting a TAB/BACKSPACE
+"set shiftround    " round indent to multiple of 'shiftwidth'
 set autoindent    " align the new line indent with the previous line
 set smarttab      " Use shiftwidth not tabstop for inserting TABs on line begin
 
 set smartindent   " Smart autoindenting when starting a new line
+
+" enable auto indent
+filetype indent on
 
 " show a visual line under the cursor's current line
 set cursorline
@@ -124,4 +127,7 @@ inoremap <right> <nop>
 
 " save file openened read-only
 cmap w!! :w !sudo tee % 
+
+" copy line to clipboard when in visual mode
+vmap <C-c> :w !pbcopy<CR><CR>
 

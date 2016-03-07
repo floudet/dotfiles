@@ -9,3 +9,5 @@ escape ^AA                  #default: ^Aa (C-A)
 # Large scrollback buffer
 defscrollback 5000          #default: 100
 
+# Save layout on detach/re-attach
+layout save default

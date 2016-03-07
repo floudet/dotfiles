@@ -9,7 +9,7 @@
 [pager]
 	diff = true
 	log = true
-    stash = false
+	stash = false
 [alias]
 	co = checkout
 	ci = commit
