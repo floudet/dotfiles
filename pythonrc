@@ -1,0 +1,16 @@
+"""Fabien's .pythonrc file
+
+The $PYTHONSTARTUP environment variable should be defined and point to this file. 
+ex: add the line below in your '~/.zshrc' or '~/.bashrc'
+export PYTHONSTARTUP=~/.pythonrc
+
+"""
+### Add autocompletion
+import readline, rlcompleter
+# BSD libedit (OS X)
+if 'libedit' in readline.__doc__:
+	readline.parse_and_bind("bind ^I rl_complete")
+# GNU readline
+else:
+	readline.parse_and_bind('tab:complete')
+
