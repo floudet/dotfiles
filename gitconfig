@@ -17,3 +17,4 @@
 	df = diff
 	dfs = diff --staged
 	logg = log --oneline --graph --all --decorate
+	find = log --all --pretty=\"format:%Cgreen%H %Cblue%s%Creset\" --name-status --grep
